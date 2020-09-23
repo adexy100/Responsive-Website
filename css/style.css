@@ -1,0 +1,369 @@
+/**************************************
+BASIC LAYOUT
+***************************************/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5;
+  background-color: #f3f7ff;
+  color: #4a4a4a;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+header {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main {
+  background-color: #fff;
+}
+
+.wrapper-bottom {
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/**************************************
+HEADER
+***************************************/
+
+.header-title {
+  font-family: 'Lobster', cursive;
+  font-size: 2.5em;
+  text-align: center;
+  padding: 15px;
+}
+
+.main-nav {
+  list-style: none;
+  margin: 0 0 50px;
+  padding: 0;
+}
+
+.main-nav a {
+  font-size: 1.1em;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  width: 100%;
+  display: block;
+}
+
+.main-nav a:hover {
+  color: #fff;
+  background-color: #4a4a4a;
+  transition: .5s;
+}
+
+.profile {
+  width: 90%;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.profile-image {
+  width: 70%;
+  margin: 15px;
+}
+
+.profile p {
+  color: #7f7f7f;
+}
+
+/**************************************
+MAIN
+***************************************/
+
+h2 {
+  display: block;
+  font-size: 1.2em;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 30px 0;
+  width: 100%;
+}
+
+#portfolio {
+  width: 95%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.portfolio-card {
+  text-align: center;
+  margin: 30px 0;
+  padding: 15px;
+}
+
+.portfolio-card:hover {
+  color: #fafafa;
+  background-color: #3f519e;
+  transition: .3s;
+}
+
+.portfolio-image{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#skills {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.skills-list {
+  display: flex;
+  display: -ms-flexbox; /* for IE 10 */
+  justify-content: space-between;
+  -ms-flex-pack: justify; /* for IE 10 */
+  align-items: center;
+  -ms-flex-align: center; /* for IE 10 */
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.skills-list:hover {
+  color: #fafafa;
+  background-color: #3f519e;
+  transition: .3s;
+}
+
+.skills-image {
+  flex: 1;
+  -ms-flex: 1; /* for IE 10 */
+  width: 20%;
+}
+
+.skills-description {
+  flex: 3;
+  -ms-flex: 3; /* for IE 10 */
+  padding-left: 20px;
+}
+
+/**************************************
+FOOTER
+***************************************/
+
+#contact {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#contact p {
+  color: #7f7f7f;
+  padding-bottom: 20px;
+}
+
+#contact a:hover {
+  color: #7f7f7f;
+}
+
+.phone,
+.email {
+  font-size: 1.1em;
+  padding-left: 10px;
+}
+
+.main-footer {
+  margin: 20px 0;
+  padding: 0;
+  display: flex;
+  display: -ms-flexbox; /* for IE 10 */
+  justify-content: space-between;
+  -ms-flex-pack: justify; /* for IE 10 */
+}
+
+.footer-nav {
+  display: none;
+}
+
+.copyright,
+.backToTop {
+  font-size: .8em;
+  font-weight: 700;
+}
+
+.backToTop a {
+  padding: 10px 0 10px 10px;
+}
+
+.backToTop a:hover {
+  color: #7f7f7f;
+  transition: .2s;
+}
+
+/**************************************
+MEDIA QUERIES
+***************************************/
+
+@media (min-width: 768px) {
+
+  /**************************************
+  HEADER
+  ***************************************/
+
+  .main-nav {
+    display: flex;
+    display: -ms-flexbox; /* for IE 10 */
+    justify-content: space-between;
+    -ms-flex-pack: justify; /* for IE 10 */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-nav li {
+    flex: auto;
+    -ms-flex: auto;
+  }
+
+  .main-nav a {
+    font-size: 1em;
+    background-color: #f3f7ff;
+    border-bottom: 1px solid #4a4a4a;
+  }
+
+  .profile-image {
+    float: right;
+    width: 40%;
+  }
+
+  .profile p {
+    text-align: left;
+  }
+
+  /**************************************
+  MAIN
+  ***************************************/
+
+  #portfolio,
+  #skills {
+    display: flex;
+    display: -ms-flexbox; /* for IE 10 */
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap; /* for IE 10 */
+  }
+
+  .portfolio-card,
+  .skills-list {
+    width: 50%;
+    margin: 20px 0;
+  }
+
+  /**************************************
+  FOOTER
+  ***************************************/
+
+  #contact {
+    width: 80%;
+  }
+
+  .backToTop {
+    display: none;
+  }
+
+  .footer-nav {
+    display: flex;
+    display: -ms-flexbox; /* for IE 10 */
+    list-style: none;
+    background-color: #f3f7ff;
+  }
+
+  .footer-nav a {
+    font-size: .7em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+
+  .footer-nav a:hover {
+    color: #fff;
+    background-color: #4a4a4a;
+    transition: .2s;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  /**************************************
+  HEADER
+  ***************************************/
+
+  .main-header {
+    display: flex;
+    display: -ms-flexbox; /* for IE 10 */
+    justify-content: space-between;
+    -ms-flex-pack: justify; /* for IE 10 */
+    align-items: center;
+    -ms-flex-align: center; /* for IE 10 */
+    padding: 10px 0 20px;
+  }
+
+  .header-title {
+    text-align: left;
+  }
+
+  .header-title,
+  .main-nav,
+  .main-nav a {
+    margin: 0;
+  }
+
+  .profile {
+    width: 100%;
+  }
+
+  /**************************************
+  MAIN
+  ***************************************/
+
+  .portfolio-card {
+    width: 33%;
+  }
+
+  #skills {
+    width: 80%;
+  }
+
+  /**************************************
+  FOOTER
+  ***************************************/
+
+  #contact {
+    width: 65%;
+  }
+
+}
